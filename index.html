@@ -6,50 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative</title>
     <script src="https://kit.fontawesome.com/c9cb13bd80.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <!-- Header starts here -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Portfolio</a></li>
-            </ul>
-        <h1>Creative</h1>
-            <ul>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><i class="fas fa-search"></i></li>
-                <li><i class="fas fa-shopping-bag"></i></li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Portfolio</a></li>
+                </ul>
+                <h1>Creative</h1>
+                <ul>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><i class="fas fa-search"></i></li>
+                    <li><i class="fas fa-shopping-bag"></i></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!--Main starts here-->
     <main>
         <section class="brand">
-            <div class="brandImg">
-                <img src="assets/home-circle-text.png" alt=" Circular text that says branding and website pros">
-                <img src="assets/home-2.jpeg" alt=" Picture of table with a plant mac computer and a calender handing on the wall">
-            </div>
-            <div class="brandText1">
-                <h2>Branding</h2>
-                <p>Venture first mover advantage incubator metrics focus backing business-to-consumer</p>
-            </div>
-            <div class="brandText2">
-                <h2>Design & Develop</h2>
-                <p>Venture first mover advantage incubator metrics focus backing business-to-consumer</p>
+            <div class="wrapper">
+                <div class="brandImg">
+                    <img class="circleText" src="assets/home-circle-text.png" alt=" Circular text that says branding and website pros">
+                    <img src="assets/home-2.jpeg" alt=" Picture of table with a plant mac computer and a calender handing on the wall">
+                </div>
+                <div class="brandText1">
+                    <h2>Branding</h2>
+                    <p>Venture first mover advantage incubator metrics focus backing business-to-consumer</p>
+                </div>
+                <div class="brandText2">
+                    <h2>Design & Develop</h2>
+                    <p>Venture first mover advantage incubator metrics focus backing business-to-consumer</p>
+                </div>
             </div>
         </section>
         <section class="slideshowContainer">
-            <i class="fas fa-chevron-left"></i>
-            <div class="slideshow">
-                <img src="assets/home-3.jpeg" alt="Picture of article on surface with a picture of a shirtless guy beside it">
-                <p>Ecosystem iPad distruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy. Product management early adopters user experience metric advisor gamification responsive web design hackathon termsheet backing series</p>
+            <div class="wrapper">
+                <i class="fas fa-chevron-left"></i>
+                <div class="slideshow">
+                    <img src="assets/home-3.jpeg" alt="Picture of article on surface with a picture of a shirtless guy beside it">
+                    <p>Ecosystem iPad distruptive social media low hanging fruit stealth launch party handshake market branding. Pitch
+                        agile development business plan stealth channels prototype mass market product management value proposition
+                        startup strategy. Product management early adopters user experience metric advisor gamification responsive web
+                        design hackathon termsheet backing series</p>
+                </div>
+                <i class="fas fa-chevron-right"></i>
             </div>
-            <i class="fas fa-chevron-right"></i>
+            
         </section>
         <section class="features">
             <div>
@@ -119,18 +133,40 @@
     </main>
     <!--Footer-->
     <footer>
-        <div class="contact">
-            <h3>Contact us</h3>
-            <p>6591 Orchard Street NY 10002, United States</p>
-            <p>Email: contact@onepro.co</p>
-            <p>Phone 01: +00 (9) 123 3456 789</p>
-            <p>Phone 02: +00 (9) 123 3456 788</p>
-            <p>Fax 01: +00 (9) 643 3456 789</p>
-            <ul>
-                <li><i class="fab fa-facebook-f"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-            </ul>
+        <div>footerContainer
+            <div class="contact">
+                <h3>Contact us</h3>
+                <p>6591 Orchard Street NY 10002, United States</p>
+                <p>Email: contact@onepro.co</p>
+                <p>Phone 01: +00 (9) 123 3456 789</p>
+                <p>Phone 02: +00 (9) 123 3456 788</p>
+                <p>Fax 01: +00 (9) 643 3456 789</p>
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Recent posts</h3>
+                <ul>
+                    <li>Conversion hackathon partner</li>
+                    <li>Network channels entrepreneur</li>
+                    <li>Return on investment creative</li>
+                    <li>Assets interaction design venture</li>
+                    <li>Infographic learning curve</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Twitter widget</h3>
+                <p>Signups for emails and notifications below.</p>
+                <form action="">
+                    <input type="email" id="email" name="email" placeholder="email address">
+                    <label for="email" class="sr-only">Email address</label>
+                    <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

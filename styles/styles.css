@@ -234,3 +234,167 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+h1,
+h2,
+h3,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.85rem;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-size: 0.9rem;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+button {
+  font-size: 0.7rem;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.3px;
+}
+
+header {
+  background-image: url(../assets/home-1.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 30px;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav ul li {
+  padding: 0 10px;
+  position: relative;
+}
+header nav ul a {
+  text-transform: uppercase;
+  color: black;
+}
+header .fa {
+  font-size: 0.9rem;
+}
+header .fa-shopping-bag::after {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  content: "2";
+  text-align: center;
+  border-radius: 50%;
+  background-color: #C3DAB7;
+  padding-top: 2px;
+  font-size: 0.3rem;
+  font-weight: 400;
+}
+
+.brand {
+  background: #C3DAB7;
+}
+
+.brandImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 50%;
+}
+.brandImg .circleText {
+  position: absolute;
+  top: -50%;
+  left: -125px;
+}
