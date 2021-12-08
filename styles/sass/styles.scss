@@ -1,5 +1,6 @@
 $sage: #C3DAB7;
 $white2: #F6F6F6;
+$black: #333333;
 
 @import "normalize";
 
@@ -15,17 +16,7 @@ img {
   display: block;
 }
 
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-    padding: 0;
-}
+
 
 ul {
     list-style: none;
@@ -38,7 +29,7 @@ a {
 }
 
 .wrapper {
-    max-width: 1000px;
+    max-width: 1200px;
     width: 90%;
     margin: 0 auto;
 }
@@ -56,6 +47,7 @@ button {
 
 p {
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
     line-height: 24px;
     letter-spacing: 0.3px;
     text-align: center;
@@ -68,12 +60,17 @@ h1 {
     text-align: center;
 }
 
-h2 {
+h2, h3 {
     font-size: 0.9rem;
     line-height: 24px;
     letter-spacing: 1.8px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 0.8rem;
 }
 
 button {
@@ -98,7 +95,6 @@ header{
     background-position: center;
     background-size: cover;
     height: 100vh;
-    padding-top: 30px;
     nav {
         display: flex;
         justify-content: space-between;
@@ -108,6 +104,15 @@ header{
             li {
                 padding: 0 10px;
                 position: relative;
+                
+            }
+            .lineThrough::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                border-bottom: 1px solid black;
+                bottom: 5px;
+                left: 0;
             }
             a {
                 
@@ -137,14 +142,28 @@ header{
     }
 }
 
+// Second section
+
 .brand{
+    padding-top: 200px;
     background: $sage;
+    position: relative;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .decorativeLine {
+        width: 50%;
+        height: 200px;
+        position: absolute;
+        top: -100px;
+        border-right: 1px solid darken($white2,10);
+    }
 }
+
 .brandImg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position:relative;
     width: 50%;
     .circleText{
@@ -152,4 +171,247 @@ header{
         top: -50%;
         left: -125px;
     }
+}
+
+.brandText{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    div {
+        flex-basis: 40%;
+    }
+}
+
+// Second section
+
+.slideshowContainer{
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    p{
+        width: 70%;
+        text-align: center;
+        font-style: italic;
+        margin: 50px auto;
+        color: $black;
+    }
+    .fa-chevron-right{
+        color: lighten($black, 20);
+    }
+}
+
+// Third section
+
+.features {
+    background-image: url(../assets/home-4.jpeg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $black;
+    .wrapper {
+        display:flex;
+        justify-content: end;
+        max-width: 1800px;
+    }
+    .featureContainer{
+        max-width: 900px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-items: center;
+        .featureItem {
+            display: flex;
+            align-items: center;
+            margin: 50px 20px;
+            max-width: calc(50% - 40px);
+            flex-basis:400px;
+            h3, 
+            p {
+                text-align: left;
+            }
+            
+        }
+        .iconContainer {
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 60px;
+            border: 2px solid $black;
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+    }
+}
+
+// Fourth section
+
+.team {
+    position: relative;
+    .decorativeLine {
+        width: 50%;
+        height: 70px;
+        position: absolute;
+        border-right: 1px solid darken($white2,10);
+        top: 0;
+    }
+    h2 {
+        margin: 30px 0 70px 0;
+    }
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+    
+    li{
+        margin: 10px;
+    }
+    li:first-child {
+        width: 540px;
+        height: 270px;
+        margin-left: 0;
+        background-color: $white2;
+        padding: 30px;
+        display:flex;
+        flex-direction: column;
+        justify-content: end;
+        p, h3{
+            text-align: left;
+        }
+        
+        
+    }
+    li:last-child {
+        width: 270px;
+        display: block;
+        height: 270px;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;;
+    }
+}
+
+// Fifth section
+
+.portfolio {
+    background-color: $sage;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 100px;
+    color: $black;
+    div {
+        width: 50%;
+    }
+    .textContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            margin-top: 40px;
+            width: 50%;
+            color: $black;
+        }
+        button {
+            margin-top: 40px;
+            padding: 10px 20px;
+            border: none;
+        }
+    }
+}
+
+//Footer
+
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 100px 0 0 0;
+    .footerContainer{
+        display:flex;
+        margin-bottom: 100px;
+        justify-content: space-between;
+        p,
+        h3 {
+            text-align: left;
+        }
+        h3 {
+            margin-bottom: 25px;
+        }
+        p{
+            margin: 0;
+        }
+        .contact{
+            ul{
+                margin: 30px 0;
+                display:flex;
+                justify-content: space-between;
+                width: 30%;
+            }
+            
+        }
+        .recentPosts{
+            h3 {
+                text-align: center;
+            }
+            ul {
+                list-style-type: disc;
+                li {
+                    padding-bottom: 10px;
+                }
+
+            }
+        }
+        .twitterWidget {
+            position: relative;
+            h3,
+            p {
+                text-align: right;
+            }
+            p {
+                margin: 40px 0;
+            }
+            form {
+                position: absolute;
+                display: flex;
+                right: 0;
+                input[type="email"]{
+                    
+                    padding: 10px 20px;
+                    font-size: 0.8rem;
+                    border: none;
+                }
+                button {
+                    background-color: $sage;
+                    width: 40px;
+                    height: 40px;
+                    border-style: none;
+                }
+            }
+        }
+    }
+}
+
+.copyright{
+    font-size: 0.6rem;
+    padding: 60px 0;
+    border-top: 0.5px solid lighten($black, 10);
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
