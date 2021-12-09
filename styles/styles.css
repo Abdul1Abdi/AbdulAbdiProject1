@@ -235,6 +235,10 @@ html {
   overflow: hidden;
 }
 
+.blog header {
+  background-image: url(../assets/blog-1.jpeg);
+}
+
 html {
   font-size: 125%;
 }
