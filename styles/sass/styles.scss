@@ -4,6 +4,7 @@ $black: #333333;
 $black2:lighten(#333333, 30) ;
 @import "normalize";
 @import "blog";
+@import "contact";
 
 // Base styling
 
@@ -122,8 +123,8 @@ header{
             } 
         }
     }
-    .fa{
-        font-size: 0.9rem;
+    .fas{
+        font-size: 1.1rem;
     }
     .fa-shopping-bag::after{
         font-family: 'Montserrat', sans-serif;
@@ -358,7 +359,7 @@ footer {
         p{
             margin: 0;
         }
-        .contact{
+        .contactFooter{
             ul{
                 margin: 30px 0;
                 display:flex;
@@ -417,3 +418,92 @@ footer {
     letter-spacing: 4px;
 }
 
+//Media Queries
+
+@media (max-width: 840px){
+    //The nav overlaps with both a white and a black background so I made a white background on the nav to maek it visible
+    .blog header .wrapper nav {
+        background:linear-gradient( rgba(255,255,255,.5), rgba(255,255,255,0.5));
+    }
+    header {
+        .wrapper {
+            min-height: 50%;
+        }
+        nav {
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 50px;
+            min-height: 100%;
+            h1 {
+                order: -1;
+            }
+            ul {
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                li {
+                    margin: 30px;
+                }
+                a {
+                    padding: 30px;
+                }
+            }
+        }
+    }
+    .brandImg{
+        min-width: 300px;
+    }
+    .brandText{
+        flex-direction: column;
+    }
+    .features {
+        .featureContainer {
+            justify-content: center;
+            .featureItem{
+                max-width: 100%;
+            }
+        }
+    }
+    
+    .portfolio{
+        flex-direction: column;
+        padding-bottom: 50px;
+        .textContainer{
+            width: 100%;
+            margin-bottom: 50px;
+            p { 
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    footer {
+        .footerContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .contactFooter{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           h3
+           ,p{
+                text-align: center;
+            }
+        }
+        .twitterWidget{
+            h3 {
+                text-align: center;
+            }
+            form{
+                position: static;
+            }
+        }
+    }
+
+    }
+    
+}

@@ -128,6 +128,7 @@ article {
         padding: 15px 0 30px 20px;
         background-color: $white2;
         flex-grow: 1;
+        position: relative;
         div{
             display:flex;
             p{
@@ -135,6 +136,21 @@ article {
                 color: darkgreen;
                 font-style: italic;
             }
+        }
+        //This is to create the arrow on the speech bubble message
+        div:first-child::after{
+            content:"";
+            display:block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-right: 15px solid $white2;
+            top: 15px;
+            left: -15px;
+
+
         }
 }
 
@@ -153,6 +169,15 @@ article {
         input{
             width:calc(30% - 10px);
             padding: 10px 0;
+            ::placeholder{
+                color: $black2;
+            }
+        }
+        input[type="email"]{
+            border-bottom: 1px solid black;
+        }
+        input[type="email"]::placeholder{
+            color: black;
         }
     }
     textarea{

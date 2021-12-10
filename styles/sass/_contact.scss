@@ -1,0 +1,99 @@
+.contact{
+    header{
+        height: max-content;
+        background: none;
+    }
+    h2,
+    h3,
+    p {
+        text-align: left;
+    }
+    h3 {
+        font-weight: 700;
+    }
+    p {
+        color: $black2;
+    }
+}
+
+.contactUs {
+    padding: 55px 0 0 0;
+    background-image:url(../assets/contact-1.jpeg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    h2 {
+        display:inline-block;
+        font-size: 2.25rem;
+        line-height: 60px;
+        font-weight: 700;
+        position: relative;
+        padding: 50px 0 100px 0;
+        ::before{
+            content:"";
+            position: absolute;
+            display: inline-block;
+            top: 0;
+            width: 20%;
+            border-top: 3px solid black;
+        }
+        span {
+            display:block;
+        }
+        
+    }
+    p {
+        max-width: 600px;
+    }
+}
+
+.contactList {
+    display: flex;
+    justify-content: center;
+    div{
+        padding: 50px 50px;
+        margin: 50px 20px 0 20px;
+        width: 30%;
+        border-right: 1px solid $black2;
+        :last-of-type{
+            border: none;
+        }
+    }
+    .fas{
+        font-size: 1.5rem;
+    }
+}
+
+.contact {
+    .leaveComment{
+        padding: 0;
+        h2{
+            font-weight: 700;
+            margin: 30px 0;
+        }
+        p{
+            margin-bottom: 100px;
+        }
+        button{
+            font-weight: 700;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+// Media queries
+
+@media (max-width: 840px){
+    .contactList {
+        flex-direction: column;
+        align-items: center;
+        div {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            border-right: none;
+            border-bottom: 1px solid $black2;
+        }
+    }
+
+}
