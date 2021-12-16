@@ -196,7 +196,14 @@ article {
         border-bottom: 1px solid black;
         font-size: 0.8rem;
         font-weight: 400;
+        
     }
+    button:hover,
+    button:focus{
+            background-color: $black2;
+            color:white;
+            transition: 0.4s all ease;
+        }
 }
 
 .blog footer{

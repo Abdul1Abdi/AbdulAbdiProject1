@@ -480,6 +480,13 @@ article h2:first-of-type {
   font-size: 0.8rem;
   font-weight: 400;
 }
+.leaveComment button:hover,
+.leaveComment button:focus {
+  background-color: gray;
+  color: white;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
 
 .blog footer {
   margin-top: 150px;
